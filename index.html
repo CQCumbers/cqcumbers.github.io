@@ -1,18 +1,25 @@
+---
+---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-6">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Alexander Zhang</title>
-    <meta name="description" content="Portfolio of interesting projects by Alexander Zhang">
+    <title>{{ site.title }}</title>
+    <meta name="description" content="{{ site.description }}">
 
-    <link rel="stylesheet" href="main.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,800">
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
   </head>
   <body>
     <div class="sidebar">
       <div class="branding-col-1">
-        <img class="logo" src="https://avatars1.githubusercontent.com/u/13649193?s=400&u=f4b71a7a36660cec8bfb8cd5cfaeda7c46efd36a&v=4"</img>
+        <img class="logo" src="{{ '/assets/images/logo.png' | relative_url }}"</img>
         <h1 class="name">Projects<br/><small>by Alexander Zhang</small></h1>
       </div>
       <div class="branding-col-2">
@@ -22,29 +29,21 @@
       </div>
     </div>
     <div class="project-pane">
+      {% for post in site.posts %}
       <div class="project">
         <div class="project-img-col">
-          <img class="project-img" src="https://raw.githubusercontent.com/CQCumbers/astronote/master/screenshot.png">
+          <img class="project-img" src="{{ site.baseurl }}/assets/images/{{ post.image }}">
         </div>
         <div class="project-disc">
-          <h1>Astronote</h1>
-          <p>This app solves schrodinger's equations for electron probability density in a hydrogen-like atom, for any valid set of quantum numbers, at runtime. I implemented all of the necessary mathematical functions for this, such as legendre and laguerre polynonomials, in C# in unity (which I had never used before), so that I could integrate the Vuforia toolkit and some existing volume-tracing code (which I customized heavily to render transparency and color gradients as well as preform better on mobile GPUs) to actually render the wavefuntions as an augmented reality, translucent object that one can look around and handle (using a printed tracking target).</p>
+          <h1>{{ post.title }}</h1>
+          {{ post.excerpt }}
           <br/>
-          <a class="button" href="https://github.com/CQCumbers">Webpage</a>
-          <a style="margin-left: 2em" class="button" href="https://github.com/CQCumbers">Github Repo</a>
+          {% for link in post.links %}
+          <a class="button project-link" href="{{ link.url }}">{{ link.title }}</a>
+          {% endfor %}
         </div>
       </div>
-      <div class="project">
-        <div class="project-img-col">
-          <img class="project-img" src="https://raw.githubusercontent.com/CQCumbers/astronote/master/screenshot.png">
-        </div>
-        <div class="project-disc">
-          <h1>ARbitron</h1>
-          <p>This app solves schrodinger's equations for electron probability density in a hydrogen-like atom, for any valid set of quantum numbers, at runtime. I implemented all of the necessary mathematical functions for this, such as legendre and laguerre polynonomials, in C# in unity (which I had never used before), so that I could integrate the Vuforia toolkit and some existing volume-tracing code (which I customized heavily to render transparency and color gradients as well as preform better on mobile GPUs) to actually render the wavefuntions as an augmented reality, translucent object that one can look around and handle (using a printed tracking target).</p>
-          <br/>
-          <a class="button" href="https://github.com/CQCumbers">Github Repo</a>
-        </div>
-      </div>
+      {% endfor %}
     </div>
   </body>
 </html>
