@@ -1,6 +1,6 @@
 ---
 title: AR Orbitals
-image: ar-orbitals.gif
+image: ar_orbitals.gif
 links: 
 ---
 
