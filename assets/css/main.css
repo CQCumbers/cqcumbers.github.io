@@ -9,13 +9,13 @@ html, body {
 body {
     color: #363d3d;
     background-color: #e6ded6;
-    font-family: Mercury, Muli, sans-serif;
+    font-family: Mercury, serif;
     line-height: 1.75;
 }
 
 h1 {
     line-height: 80%;
-    font-family: Input;
+    font-family: Input, monospace;
     color: red;
 }
 
@@ -62,7 +62,7 @@ small {
     display: inline-block;
     text-decoration: none;
     font-weight: bold;
-    font-family: Input;
+    font-family: Input, monospace;
     color: red;
 }
 
@@ -110,23 +110,29 @@ small {
 .footer {
     text-align: center;
     margin-bottom: 2em;
-    font-family: Input;
+    font-family: Input, monospace;
     font-size: 75%;
 }
 
 @media (max-width: 768px) {
     .sidebar {
+        display: block;
         width: auto;
         margin: 0em 1em 1em 1em;
-        grid-template-columns: 30% auto;
     }
 
-    .name {
-        font-size: 150%;
+    .logo {
+        max-width: 6em;
+        float: right;
+        margin: 0em 1em;
     } 
 
+    .name {
+        font-size: 190%;
+    }
+
     .branding-col-2 {
-        padding: 1em 1em 1em 2em;
+        padding: 1em;
     }
 
     .project {
