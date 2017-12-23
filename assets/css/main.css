@@ -7,15 +7,20 @@ html, body {
 }
 
 body {
-    color: red;
-    background-color: #f8fbf8;
-    display: grid;
-    grid-template-columns: 20% auto;
-    font-family: Avenir, Muli, sans-serif;
+    color: #363d3d;
+    background-color: #e6ded6;
+    font-family: Mercury, Muli, sans-serif;
+    line-height: 1.75;
 }
 
 h1 {
     line-height: 80%;
+    font-family: Input;
+    color: red;
+}
+
+a {
+    text-decoration: none;
 }
 
 small {
@@ -24,64 +29,66 @@ small {
 }
 
 .sidebar {
-    border-right-style: solid;
-    border-right-color: red;
-    padding-right: 2em;
-    text-align: right;
+    display: grid;
+    grid-template-columns: 22% auto;
+    max-width: 80em;
+    width: calc(100% - 16em);
+    margin: auto;
+    height: auto;
     word-wrap: break-word;
-    grid-column: 1 / 2;
-    align-items: right;
-    position: sticky;
     top: 0;
-    height: 100vh;
 }
 
 .branding-col-1 {
-    margin-top: 40%;
+    height: 100%;
     overflow: hidden;
+    text-align: right;
+    align-items: right;
+}
+
+.branding-col-2 {
+    padding: 2em 0.5em 2em 3em;
+    text-align: left;
 }
 
 .logo {
-    width: 45%;
-}
-
-.bio {
-    margin-left: 1.5em;
+    width: 100%;
+    max-width: 10em;
+    margin: auto;
 }
 
 .button {
-    border-color: red;
-    border-style: solid;
-    padding: 0.2em 1em;
+    padding: 0.5em 1em 0.5em 0em;
+    display: inline-block;
     text-decoration: none;
+    font-weight: bold;
+    font-family: Input;
     color: red;
 }
 
 .button:hover {
-    background-color: red;
-    color: white;
+    color: #363d3d;
 }
 
 .project-link {
     margin-right: 2em;
 }
 
-.project-pane {
-    grid-column: 2 / 3;
-}
-
 .project {
     display: grid;
-    margin: 2em 2em 5em 3em;
-    border-style: solid;
-    border-color: red;
+    margin: 4em auto;
+    max-width: 80em;
+    width: calc(100% - 16em);
+    background-color: #f6f3f3;
+    border-radius: 0.2em;
+    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     align-items: center;
     grid-template-columns: 40% 60%;
 }
 
 .project-img-col {
-    border-right-style: solid;
-    border-color: red;
+    border-top-left-radius: 2px;
+    border-bottom-left-radius: 2px;
     height: 100%;
     overflow: hidden;
 }
@@ -93,79 +100,48 @@ small {
 }
 
 .project-disc {
-    padding: 2em 0em 2em 2em;
+    padding: 2em 0.5em 2em 2em;
 }
 
 .project-disc > p {
     margin-right: 2em;
 }
 
-@media (max-width: 991px) {
-    body {
-        display: block;
-    } 
-
-    .sidebar {
-        position: static;
-        display: grid;
-        grid-template-columns: 40% auto;
-        height: auto;
-        border-style: none none solid none;
-    }
-    
-    .branding-col-1 {
-        margin-top: 0em;
-        padding-right: 2em;
-        border-right-style: solid;
-        border-right-color: red;
-    }
-
-    .logo {
-        margin-top: 12%;
-        width: 30%;
-    }
-
-    .branding-col-1 {
-        height: 100%;
-    }
-
-    .branding-col-2 {
-        margin-top: 5%;
-        padding-left: 2em;
-        text-align: left;
-        margin-bottom: 2em;
-    }
-
-    .bio {
-        margin-left: 0em;
-    }
-
-    .project {
-        margin: 4em 2em 5em 2em;
-    }
+.footer {
+    text-align: center;
+    margin-bottom: 2em;
+    font-family: Input;
+    font-size: 75%;
 }
 
-@media (max-width: 735px) {
-    .branding-col-1 {
-        padding-right: 0.5em;
+@media (max-width: 768px) {
+    .sidebar {
+        width: auto;
+        margin: 0em 1em 1em 1em;
+        grid-template-columns: 30% auto;
     }
 
     .name {
         font-size: 150%;
-    }
+    } 
 
-    .logo {
-        margin-top: 3em;
-        width: 60%;
+    .branding-col-2 {
+        padding: 1em 1em 1em 2em;
     }
 
     .project {
         display: block;
+        width: auto;
+        margin: 2em 1em 1em 1em;
     }
     
     .project-img-col {
+        border-top-right-radius: 2px;
+        border-bottom-left-radius: 0px;
         border-right-style: none;
         border-bottom-style: solid;
+        border-bottom-color: rgba(0,0,0,.08);
+        border-bottom-width: 1px;
         height: 16em;
     }
 

@@ -23,9 +23,9 @@
         <h1 class="name">Projects<br/><small>by Alexander Zhang</small></h1>
       </div>
       <div class="branding-col-2">
-        <p class="bio">I like making cool stuff and learning new technologies on the way. I guess this an obligatory online catalog and notebook of the small projects I have created with machine learning, augmented reality, web technologies, and anything else I find interesting.</p>
-        <br/>
+        <p class="bio">Alexander Zhang (a.k.a. Tyrese a.k.a. CQCumbers) is a student with an interest in computer science and a penchant for independent projects. He seems to enjoy making lots of small software projects for fun, or for learning new technologies like deep learning and augmented reality. Currently, his greatest expertise is probably in data analysis, full-stack web development, and cloud computing, though he's dabbled in desktop and mobile apps as well. This site appears to be his obligatory online catalog of (mostly) finished projects.</p>
         <a class="button" href="https://github.com/CQCumbers">Github Profile</a>
+        <a class="button" href="https://github.com/CQCumbers">Resume</a>
       </div>
     </div>
     <div class="project-pane">
@@ -37,7 +37,6 @@
         <div class="project-disc">
           <h1>{{ post.title }}</h1>
           {{ post.excerpt }}
-          <br/>
           {% for link in post.links %}
           <a class="button project-link" href="{{ link.url }}">{{ link.title }}</a>
           {% endfor %}
@@ -45,5 +44,6 @@
       </div>
       {% endfor %}
     </div>
+    <p class="footer">Website by CQCumbers. Source on <a href="https://github.com/CQCumbers/CQCumbers.github.io">github</a></p>
   </body>
 </html>
