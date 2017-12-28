@@ -1,5 +1,7 @@
 ---
+# Template for html of portfolio homepage
 ---
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,8 +15,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:400,800">
-    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Fira+Mono:500" rel="stylesheet">
+    <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
   </head>
   <body>
     <div class="sidebar">
@@ -23,8 +25,10 @@
         <h1 class="name">Projects<br/><small>by Alexander Zhang</small></h1>
       </div>
       <div class="branding-col-2">
-        <p class="bio">Alexander Zhang (a.k.a. Tyrese a.k.a. CQCumbers) is a student with an interest in computer science and a penchant for independent projects. He seems to enjoy making lots of small software projects for fun, or for learning new technologies like deep learning and augmented reality. Currently, his greatest expertise is probably in data analysis, full-stack web development, and cloud computing, though he's dabbled in desktop and mobile apps as well. This site appears to be his obligatory online catalog of (mostly) finished projects.</p>
-        <a class="button project-link" href="https://github.com/CQCumbers">Github Profile</a>
+        <p class="bio">{{ site.bio }}</p>
+        {% for link in site.links %}
+        <a class="button {{ link.class }}" href="{{ link.url }}">{{ link.title }}</a>
+        {% endfor %}
       </div>
     </div>
     <div class="project-pane">
@@ -37,7 +41,7 @@
           <h1>{{ post.title }}</h1>
           {{ post.excerpt }}
           {% for link in post.links %}
-          <a class="button project-link" href="{{ link.url }}">{{ link.title }}</a>
+          <a class="button {{ link.class }}" href="{{ link.url }}">{{ link.title }}</a>
           {% endfor %}
         </div>
       </div>

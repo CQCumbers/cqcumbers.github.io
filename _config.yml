@@ -1,6 +1,8 @@
 title: Alexander Zhang
-description: A collection of interesting-ish projects by Alexander Zhang
-bio: I like making cool stuff and learning new technologies on the way. I guess this an obligatory online catalog and notebook of the small projects I have created with machine learning, augmented reality, web technologies, and anything else I find interesting.
+description: An online catalog of (mostly) finished projects by Alexander Zhang / Tyrese / CQCumbers
+bio: Alexander Zhang (a.k.a. Tyrese a.k.a. CQCumbers) is a student with an interest in computer science and a penchant for independent projects. He enjoys creating many small projects for fun, or for learning new things like deep learning and augmented reality. Currently, he is most experienced in data analysis, cloud computing, and web development, though he's done robotics and desktop/mobile app development as well. This webpage is his online catalog of (mostly) finished projects.
 links:
-    - url: https://github.com/CQCumbers
-      title: Github Profile
+- url: https://github.com/CQCumbers
+  title: Github Profile
+sass:
+  style: compressed

@@ -1,3 +1,3 @@
 # Portfolio Website
-List of projects by Alexander Zhang (CQ\_Cumbers)
 
+An online catalog of (mostly) finished projects by Alexander Zhang / Tyrese / CQCumbers.
