@@ -3,7 +3,7 @@ title: AR Orbitals
 image: ar_orbitals.gif
 links: 
 - title: App Store
-  url: https://itunes.apple.com/us/app/ar-orbitals/id1299537037?mt=8
+  url: https://itunes.apple.com/us/app/ar-orbitals/id1299537037
 ---
 
 AR Orbitals is an iOS app that visualizes the shapes of electron orbitals in augmented reality. In order to do this, it solves Schrodinger's equations for electron probability at runtime, ray traces the resulting density field, and displays it above a real-world anchor, allowing users to more intuitively see the shapes, sizes, and polarities orbitals. I implemented all of the necessary mathematical functions for this, such as Legendre and Laguerre polynomials, in Unity C# myself, so that I could integrate the Vuforia augmented reality toolkit and some customized ray tracing code, adding transparency/color gradients and mobile GPU optimizations. This taught me alot about Unity, C#, and shader code, not to mention wavefunction mathematics.
