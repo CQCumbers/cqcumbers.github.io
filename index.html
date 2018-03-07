@@ -15,7 +15,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
 
-    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Fira+Mono:500" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville|Libre+Franklin:700" rel="stylesheet">
     <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
   </head>
   <body>
@@ -35,7 +35,11 @@
       {% for post in site.posts %}
       <div class="project">
         <div class="project-img-col">
+        {% if post.video %}
+          <video class="project-img" src="{{ site.baseurl }}/assets/images/{{ post.video }}" autoplay loop>
+        {% else %}
           <img class="project-img" src="{{ site.baseurl }}/assets/images/{{ post.image }}">
+        {% endif %}
         </div>
         <div class="project-disc">
           <h1>{{ post.title }}</h1>
