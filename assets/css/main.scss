@@ -7,8 +7,8 @@ $black: #363d3d;
 $white: #f6f3f3;
 $beige: #e6ded6;
 
-$body-font: 'Libre Baskerville', 'Times New Roman', serif;
-$heading-font: 'Libre Franklin', sans-serif;
+$body-font: 'Work Sans', sans-serif;
+$heading-font: 'Eczar', serif;
 
 html, body {
     width: 100%;
@@ -22,14 +22,15 @@ body {
     color: $black;
     background-color: $beige;
     font-family: $body-font;
-    font-size: 14px;
-    line-height: 2.1;
+    font-size: 16px;
+    line-height: 1.65;
 }
 
 h1 {
-    line-height: 80%;
-    font-size: 30px;
+    font-size: 2.5em;
     font-family: $heading-font;
+    line-height: 1;
+    margin: 0.3em 0px -0.1em;
     color: $red;
 }
 
@@ -38,8 +39,8 @@ a {
 }
 
 small {
-    font-size: 50%;
-    line-height: 0.5;
+    font-size: 0.5em;
+    line-height: 0.5em;
 }
 
 p {
@@ -59,7 +60,6 @@ p {
 
 .branding-col-1 {
     height: 100%;
-    overflow: hidden;
     text-align: right;
     align-items: right;
 }
@@ -70,17 +70,15 @@ p {
 }
 
 .name {
-    margin-top: 0.2em;
-    font-size: 36px;
-}
-
-.name small {
-    font-size: 42%;
+    margin-top: 0px;
+    font-size: 3em;
+    white-space: nowrap;
+    direction: rtl;
 }
 
 .logo {
     width: 100%;
-    max-width: 12em;
+    max-width: 11.25em;
     margin: auto;
 }
 
@@ -88,7 +86,9 @@ p {
     margin: 0.2em 4.5em 0.2em 0em;
     display: inline-block;
     text-decoration: none;
-    font-family: $heading-font;
+    font-family: $body-font;
+    font-size: 1.1em;
+    font-weight: bold;
     color: $red;
 }
 
@@ -104,7 +104,7 @@ p {
 
 .project {
     display: grid;
-    margin: 4em auto;
+    margin: 2em auto;
     max-width: 72em;
     width: calc(100% - 16em);
     background-color: $white;
@@ -151,12 +151,12 @@ p {
     .logo {
         max-width: 6em;
         float: right;
-        margin: 0em 1em 0em 2em;
+        margin: 0em 1em;
     } 
 
     .name {
-        font-size: 190%;
-        margin-top: 1em;
+        font-size: 3.5em;
+        padding-top: 0.5em;
     }
 
     .branding-col-2 {

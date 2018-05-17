@@ -1,5 +1,5 @@
 ---
-title: kbrenders
+title: KBRenders
 image: kbrenders.png
 links:
 - title: Website
