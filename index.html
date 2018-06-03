@@ -5,7 +5,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-6">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>{{ site.title }}</title>
@@ -17,6 +17,7 @@
 
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600|Eczar:700" rel="stylesheet">
     <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
+    <link href="https://unpkg.com/aos/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="sidebar">
@@ -33,10 +34,10 @@
     </div>
     <div class="project-pane">
       {% for post in site.posts %}
-      <div class="project">
+      <div class="project" data-aos="fade-up">
         <div class="project-img-col">
         {% if post.video %}
-          <video class="project-img" src="{{ site.baseurl }}/assets/images/{{ post.video }}" autoplay loop>
+          <video class="project-img" src="{{ site.baseurl }}/assets/images/{{ post.video }}" autoplay muted loop>
         {% else %}
           <img class="project-img" src="{{ site.baseurl }}/assets/images/{{ post.image }}">
         {% endif %}
@@ -52,5 +53,7 @@
       {% endfor %}
     </div>
     <p class="footer">Website by CQCumbers. Source on <a href="https://github.com/CQCumbers/CQCumbers.github.io">github</a></p>
+    <script src="https://unpkg.com/aos/dist/aos.js"></script>
+    <script>AOS.init({once: true, duration: 900, offset: 120});</script>
   </body>
 </html>
