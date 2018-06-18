@@ -4,8 +4,8 @@
 
 $red: red;
 $black: #363d3d;
-$white: #f6f3f3;
-$beige: #e6ded6;
+$white: white;
+$beige: #f6f6f3;
 
 $body-font: 'Work Sans', sans-serif;
 $heading-font: 'Eczar', serif;
@@ -60,25 +60,24 @@ p {
 .branding-col-1 {
     height: 100%;
     text-align: right;
-    align-items: right;
-    padding-bottom: 3em;
+    align-items: end;
+    padding-bottom: 1em;
 }
 
 .branding-col-2 {
-    padding: 0.5em 0.5em 2em 3em;
+    padding: 1em 2em 2em 3em;
     text-align: left;
 }
 
 .name {
     margin-top: 0px;
-    font-size: 3em;
+    font-size: 3.2em;
     white-space: nowrap;
-    direction: rtl;
 }
 
 .logo {
     width: 100%;
-    max-width: 11.25em;
+    max-width: 12em;
     margin: auto;
 }
 
@@ -99,24 +98,20 @@ p {
 }
 
 .button:hover {
-    filter: brightness(40%);
+    filter: brightness(80%);
 }
 
 .project {
     display: grid;
-    margin: 2em auto;
-    max-width: 72em;
-    width: calc(100% - 16em);
+    margin: 3.5em auto;
+    max-width: 75em;
+    width: calc(100% - 12em);
     background-color: $white;
-    border-radius: 6px;
-    box-shadow: 0 4px 6px rgba(50,50,93,.11), 0 1px 3px rgba(0,0,0,.08);
     align-items: center;
     grid-template-columns: 40% 60%;
 }
 
 .project-img-col {
-    border-top-left-radius: 6px;
-    border-bottom-left-radius: 6px;
     height: 100%;
     overflow: hidden;
 }
@@ -128,7 +123,7 @@ p {
 }
 
 .project-disc {
-    padding: 2em 0.5em 2em 2em;
+    padding: 3em 2em 3em 3em;
 }
 
 .project-disc > p {
@@ -137,8 +132,8 @@ p {
 
 .footer {
     text-align: center;
-    margin-bottom: 2em;
-    font-size: 75%;
+    padding: 1em;
+    font-size: 0.75em;
 }
 
 @media (max-width: 768px) {
@@ -151,12 +146,14 @@ p {
     .logo {
         max-width: 6em;
         float: right;
-        margin: 0em 1em;
+        margin-right: 1em;
     } 
 
     .name {
+        text-align: left;
         font-size: 3.5em;
         padding-top: 0.5em;
+        margin-left: 0.2em;
     }
 
     .branding-col-2 {
@@ -166,17 +163,15 @@ p {
     .project {
         display: block;
         width: auto;
-        margin: 2em 1em 1em 1em;
+        margin: 2em 1em;
     }
     
     .project-img-col {
-        border-top-right-radius: 6px;
-        border-bottom-left-radius: 0px;
-        border-right-style: none;
-        border-bottom-style: solid;
-        border-bottom-color: rgba(0,0,0,.08);
-        border-bottom-width: 1px;
         height: 16em;
+    }
+
+    .project-disc {
+        padding: 2em 0.5em 2em 2em;
     }
 
     .button {
