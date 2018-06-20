@@ -1,0 +1,38 @@
+name: Alexander Zhang
+contact:
+    - name: cqcumbers.github.io
+      link: https://cqcumbers.github.io
+categories:
+    education:
+        - name: Princeton High School
+          date: 2014-2018
+          description:
+            - Weighted GPA 4.23, coursework in organic chemistry and linear algebra
+            - 36 ACT, 2350 SAT, 800's on 3 SAT Subject tests, and 5's on 6 AP tests
+    work experience:
+        - name: University of Connecticut
+          date: Summer 2017
+          description:
+            - Research internship with hydroclimatology group
+            - Analyzed and visualized data from multiple climate models
+            - Studied limitations of climate simulation approaches
+            - Wrote manuscript for paper to be submitted to <i>Geophysical Research Letters</i>
+    selected projects:
+        - name: Grifbot
+          description:
+            - Deep learning chatbot trained on dialogue from the webseries <i>Red vs. Blue</i>
+            - Custom neural network language model generates responses to Facebook messages
+        - name: AR Orbitals
+          description:
+            - iOS app that visualizes atomic orbitals in augmented reality
+            - Calculates wavefunction equations and ray traces them in real time
+        - name: KLE-Render
+          description:
+            - Webapp for making mockups of custom keyboard layouts and keycap set designs
+            - Used in most of keycap set group buys, with hundreds of mockups generated daily
+    extracurriculars:
+        - Co-captained team to 7th (3rd SEB) at 2018 National Ocean Sciences Bowl (2015-2018)
+        - Won 3rd place at 2016 New Jersey regionals for National Science Bowl (2013-2018)
+        - Captained engineering and physics events for Science Olympiad team (2015-2018)
+        - Co-founded FLL team, won second place for Robot Perfomance in PA (2009-2013)
+        - Won 8th place at HSCTF 2018 and top 30 at Pennapps Fall 2017

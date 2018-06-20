@@ -1,0 +1,49 @@
+---
+# Template for html of resume
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ site.title }} | Resume</title>
+    <meta name="description" content="{{ site.description }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500|Eczar:700" rel="stylesheet">
+    <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
+  </head>
+  </head>
+  <body>
+    {% assign resume = site.data.resume %}
+    <div class="resume">
+      <h1>{{ resume.name }}</h1>
+      {% for method in resume.contact %}
+      <a class="button" href="{{ method.link }}">{{ method.name }}</a>
+      {% endfor %}
+      {% for category in resume.categories %}
+      <h2 class="category">{{ category[0] }}</h2>
+        {% for item in category[1] %}
+        {% if item.name %}
+        <div class="group">
+          <h3 class="item-name">{{ item.name }}</h3>
+          <h3 class="date">{{ item.date }}</h3>
+        </div>
+        <ul class="description">
+          {% for bullet in item.description %}
+          <li>{{ bullet }}</li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p class="item">{{ item }}</p>
+        {% endif %}
+        {% endfor %}
+      {% endfor %}
+    </div>
+  </body>
+</html>
