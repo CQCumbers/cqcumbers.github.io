@@ -1,11 +1,17 @@
 name: Alexander Zhang
 contact:
+    - name: Email
+      link: mailto:alexbrianzhang@gmail.com
+      print: alexbrianzhang@gmail.com
+      public: false
     - name: Portfolio Website
       link: https://cqcumbers.com
+      print: cqcumbers.com
+      public: true
 categories:
     education:
         - name: Princeton High School
-          date: 2014-2018
+          date: 2014-18
           description:
             - Weighted GPA 4.23, coursework in organic chemistry and linear algebra
             - 36 ACT, 2350 SAT, 800's on 3 SAT Subject tests, and 5's on 6 AP tests
@@ -20,8 +26,8 @@ categories:
     selected projects:
         - name: Grifbot
           description:
-            - Deep learning chatbot trained on dialogue from the webseries <i>Red vs. Blue</i>
-            - Custom neural network language model generates responses to Facebook messages
+            - Deep learning language model trained on dialogue from the show <i>Red vs. Blue</i>
+            - Responds to Facebook messages with generated in-character responses
         - name: AR Orbitals
           description:
             - iOS app that visualizes atomic orbitals in augmented reality
@@ -29,10 +35,10 @@ categories:
         - name: KLE-Render
           description:
             - Webapp for making mockups of custom keyboard layouts and keycap set designs
-            - Used in most of keycap set group buys, with hundreds of mockups generated daily
+            - Used in most keycap set group buys, hundreds of mockups generated daily
     extracurriculars:
-        - Co-captained team to 7th (3rd SEB) at 2018 National Ocean Sciences Bowl (2015-2018)
-        - Won 3rd place at 2016 New Jersey regionals for National Science Bowl (2013-2018)
-        - Captained engineering and physics events for Science Olympiad team (2015-2018)
-        - Co-founded FLL team, won second place for Robot Perfomance in PA (2009-2013)
+        - Won 7th (3rd Science Expert Briefing) at 2018 National Ocean Sciences Bowl (2015-18)
+        - Won 3rd place at 2016 New Jersey regionals for National Science Bowl (2013-18)
+        - Captained engineering and physics events for Science Olympiad team (2015-18)
+        - Co-founded FLL team, won second place for Robot Perfomance in PA (2009-13)
         - Won 8th place at HSCTF 2018 and top 30 at Pennapps Fall 2017

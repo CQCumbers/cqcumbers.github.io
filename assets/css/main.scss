@@ -101,6 +101,15 @@ p {
     filter: brightness(80%);
 }
 
+.contact {
+    margin: 0.2em 1em 0.2em 0em;
+    font-size: 1em;
+}
+
+.print { 
+    display: none;
+}
+
 .project {
     display: grid;
     margin: 3.5em auto;
@@ -235,9 +244,30 @@ p {
 }
 
 @media print {
-    .resume {
+    body {
         font-size: 13px;
+    }
+
+    .resume {
         margin: auto;
         padding-top: 5em;
+    }
+
+    h1 { 
+        color: $black;
+        font-size: 2.8em;
+    }
+
+    .contact {
+        margin-right: 0.5em;
+        font-size: 0.75em;
+    }
+
+    .button {
+        display: none;
+    }
+
+    .print {
+        display: inline-block;
     }
 }

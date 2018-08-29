@@ -24,7 +24,10 @@
     <div class="resume">
       <h1>{{ resume.name }}</h1>
       {% for method in resume.contact %}
-      <a class="button" href="{{ method.link }}">{{ method.name }}</a>
+      {% if method.public or jekyll.environment == "development" %}
+      <a class="button contact" href="{{ method.link }}">{{ method.name }}</a>
+      <span class="print contact">{{ method.print }}</span>
+      {% endif %}
       {% endfor %}
       {% for category in resume.categories %}
       <h2 class="category">{{ category[0] }}</h2>
