@@ -13,32 +13,37 @@ categories:
         - name: Princeton High School
           date: 2014-18
           description:
-            - Weighted GPA 4.23, coursework in organic chemistry and linear algebra
-            - 36 ACT, 2350 SAT, 800's on 3 SAT Subject tests, and 5's on 6 AP tests
+            - 4.2 GPA, 36 on ACT, 800 on 3 SAT Subject tests, and 5 on six AP tests
     work experience:
         - name: University of Connecticut
           date: Summer 2017
           description:
-            - Research internship with hydroclimatology group
             - Analyzed and visualized data from multiple climate models
             - Studied limitations of climate simulation approaches
-            - Wrote manuscript for paper to be submitted to <i>Geophysical Research Letters</i>
     selected projects:
-        - name: Grifbot
-          description:
-            - Deep learning language model trained on dialogue from the show <i>Red vs. Blue</i>
-            - Responds to Facebook messages with generated in-character responses
         - name: AR Orbitals
           description:
-            - iOS app that visualizes atomic orbitals in augmented reality
-            - Calculates wavefunction equations and ray traces them in real time
+            - Unity app that visualizes atomic orbitals in augmented reality
+            - Calculates and ray marches wavefunctions real time using C# and GLSL
+        - name: Frame Boy
+          description:
+            - C++ & SDL Game Boy emulator with browser support via webassembly
+            - Includes stereo sound and support for most first-gen cartridges
+        - name: Geodoodle
+          description:
+            - Swift iOS app for collaborative pixel art in the real world
+            - Asynchronous websocket server with Postgres for location data
+        - name: Grifbot
+          description:
+            - Word-level neural language model trained on TV show scripts
+            - Built with Tensorflow and deployed with Flask and Docker
         - name: KLE-Render
           description:
             - Webapp for making mockups of custom keyboard layouts and keycap set designs
             - Used in most keycap set group buys, hundreds of mockups generated daily
-    extracurriculars:
-        - Won 7th (3rd Science Expert Briefing) at 2018 National Ocean Sciences Bowl (2015-18)
-        - Won 3rd place at 2016 New Jersey regionals for National Science Bowl (2013-18)
-        - Captained engineering and physics events for Science Olympiad team (2015-18)
-        - Co-founded FLL team, won second place for Robot Perfomance in PA (2009-13)
+        - Several other full-stack web and native applications are not described here
+        - See more details about my projects at cqcumbers.com and github.com/cqcumbers
+    achievements:
         - Won 8th place at HSCTF 2018 and top 30 at Pennapps Fall 2017
+        - Won 7th (3rd Science Expert Briefing) at 2018 National Ocean Sciences Bowl (2015-18)
+        - Captained engineering and physics events for Science Olympiad team (2015-18)
