@@ -10,6 +10,10 @@ contact:
       public: true
 categories:
     education:
+        - name: University of Michigan
+          date: 2018-Present
+          description:
+            - First-year undergraduate engineering student in computer science
         - name: Princeton High School
           date: 2014-18
           description:
@@ -25,23 +29,20 @@ categories:
           description:
             - Unity app that visualizes atomic orbitals in augmented reality
             - Calculates and ray marches wavefunctions real time using C# and GLSL
+            - Helps chemistry and physics students better understand orbital shapes
         - name: Frame Boy
           description:
             - C++ & SDL Game Boy emulator with browser support via webassembly
             - Includes stereo sound and support for most first-gen cartridges
-        - name: Geodoodle
-          description:
-            - Swift iOS app for collaborative pixel art in the real world
-            - Asynchronous websocket server with Postgres for location data
+            - Preserves older games and documents obscure hardware behavior
         - name: Grifbot
           description:
             - Word-level neural language model trained on TV show scripts
-            - Built with Tensorflow and deployed with Flask and Docker
+            - Generated dialogue and scripts provide infinite entertainment
         - name: KLE-Render
           description:
             - Webapp for making mockups of custom keyboard layouts and keycap set designs
             - Used in most keycap set group buys, hundreds of mockups generated daily
-        - Several other full-stack web and native applications are not described here
         - See more details about my projects at cqcumbers.com and github.com/cqcumbers
     achievements:
         - Won 8th place at HSCTF 2018 and top 30 at Pennapps Fall 2017
