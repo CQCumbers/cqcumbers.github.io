@@ -13,7 +13,7 @@ categories:
         - name: University of Michigan
           date: 2018-Present
           description:
-            - First-year undergraduate engineering student in computer science
+            - Undergraduate engineering student in computer science
         - name: Princeton High School
           date: 2014-18
           description:
@@ -27,22 +27,23 @@ categories:
     selected projects:
         - name: AR Orbitals
           description:
-            - Unity app that visualizes atomic orbitals in augmented reality
-            - Calculates and ray marches wavefunctions real time using C# and GLSL
-            - Helps chemistry and physics students better understand orbital shapes
+            - Mobile app that visualizes electron orbitals in augmented reality
+            - Calculates and ray marches wavefunctions in real time with C# and GLSL
+            - Has helped over 400 chemistry students better understand orbital shapes
         - name: Frame Boy
           description:
-            - C++ & SDL Game Boy emulator with browser support via webassembly
+            - C++ Game Boy emulator with browser and PWA support via webassembly
             - Includes stereo sound and support for most first-gen cartridges
-            - Preserves older games and documents obscure hardware behavior
+            - Preserves older games and helps document obscure hardware behaviors
         - name: Grifbot
           description:
-            - Word-level neural language model trained on TV show scripts
-            - Generated dialogue and scripts provide infinite entertainment
+            - Deep learning language model trained to imitate dialogue from a TV show
+            - Chatbot allows virtual fan interaction, scripts provide endless entertainment
         - name: KLE-Render
           description:
             - Webapp for making mockups of custom keyboard layouts and keycap set designs
-            - Used in most keycap set group buys, hundreds of mockups generated daily
+            - Used by most keycap set designers, over 200 mockups generated daily
+            - Automated photorealistic renders generated over $1200 in revenue in 2018
         - See more details about my projects at cqcumbers.com and github.com/cqcumbers
     achievements:
         - Won 8th place at HSCTF 2018 and top 30 at Pennapps Fall 2017
