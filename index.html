@@ -15,14 +15,15 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
 
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600|Eczar:700" rel="stylesheet">
     <link href="{{ '/assets/css/main.css' | relative_url }}" rel="stylesheet">
-    <link href="https://unpkg.com/aos@next/dist/aos.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <div class="sidebar">
       <div class="branding-col-1">
-        <img class="logo" src="{{ '/assets/images/logo.svg' | relative_url }}"</img>
+        <img class="logo" src="{{ '/assets/images/logo.svg' | relative_url }}" alt=""></img>
         <h1 class="name">Projects</h1>
       </div>
       <div class="branding-col-2">
@@ -37,9 +38,17 @@
       <div class="project" data-aos="fade-up">
         <div class="project-img-col">
         {% if post.video %}
-          <video class="project-img" src="{{ site.baseurl }}/assets/images/{{ post.video }}" autoplay muted loop>
+          {% if forloop.index <= 2 %}
+          <video class="project-img" src="{{ site.baseurl }}/assets/images/{{ post.video }}" autoplay muted loop playsinline>
+          {% else %}
+          <video class="project-img lazyload" data-src="{{ site.baseurl }}/assets/images/{{ post.video }}" autoplay muted loop playsinline>
+          {% endif %}
         {% else %}
-          <img class="project-img" src="{{ site.baseurl }}/assets/images/{{ post.image }}">
+          {% if forloop.index <= 2 %}
+          <img class="project-img" src="{{ site.baseurl }}/assets/images/{{ post.image }}" alt="{{ post.image }}">
+          {% else %}
+          <img class="project-img lazyload" data-src="{{ site.baseurl }}/assets/images/{{ post.image }}" alt="{{ post.image }}">
+          {% endif %}
         {% endif %}
         </div>
         <div class="project-disc">
@@ -53,7 +62,9 @@
       {% endfor %}
     </div>
     <p class="footer">Website by Alexander Zhang</p>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+
+    <script src="https://unpkg.com/lazysizes@5.1.2/lazysizes.min.js"></script>
+    <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
     <script>AOS.init({once: true, duration: 900, offset: 120});</script>
   </body>
 </html>

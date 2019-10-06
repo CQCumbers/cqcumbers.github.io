@@ -3,7 +3,7 @@ title: SciBowlDB
 image: scibowldb.png
 links:
 - title: Website
-  url: http://www.scibowldb.com/
+  url: https://scibowldb.com/
 - title: Github Repo
   url: https://github.com/CQCumbers/scibowldb
 ---

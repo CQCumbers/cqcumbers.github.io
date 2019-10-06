@@ -1,9 +1,9 @@
 ---
 title: KBRenders
-image: kbrenders.png
+image: kbrenders.jpg
 links:
 - title: Website
-  url: http://www.kbrenders.com/
+  url: https://kbrenders.com/
 - title: Github Repo
   url: https://github.com/CQCumbers/kbrenders
 ---
