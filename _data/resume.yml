@@ -8,44 +8,46 @@ contact:
       link: https://cqcumbers.com
       print: cqcumbers.com
       public: true
+    - name: Github Profile
+      link: https://github.com/cqcumbers
+      print: github.com/cqcumbers
+      public: false
 categories:
     education:
-        - name: University of Michigan
-          date: 2018-Present
+        - name: University of Michigan College of Engineering
+          date: 2018-21
           description:
-            - Undergraduate engineering student in computer science
-        - name: Princeton High School
-          date: 2014-18
-          description:
-            - 4.2 GPA, 36 on ACT, 800 on 3 SAT Subject tests, and 5 on six AP tests
+            - Computer Science major, coursework in Machine Learning, Database Management, GPU Programming, Operating Systems, Compiler Construction, & Computer Security
     work experience:
-        - name: University of Connecticut
-          date: Summer 2017
+        - name: Real Time Water Systems Lab Internship
+          date: 2019-20
           description:
-            - Analyzed and visualized data from multiple climate models
-            - Studied limitations of climate simulation approaches
+            - Designed and wrote cooperative multitasking OS for Cortex-M3 based systems
+            - Developed LTE modem driver, including HTTP request parser and response builder
+            - Created AWS Lambda based server for handling live sensor data using InfluxDB
     selected projects:
+        - name: Nmulator
+          description:
+            - Work-in-progress Nintendo 64 emulator that boots many commercial games
+            - JIT recompiles MIPS to x86_64 machine code, including SSE4 for SIMD opcodes
+            - Emulates RDP using software rasterization in a Vulkan compute shader
+        - name: Dungeon Bot
+          description:
+            - Deep learning Discord chatbot based on AI Dungeon 2, used by over 1000 servers
+            - Deployed on ephemeral GPU workers using Docker, coordinated via Redis queues
         - name: AR Orbitals
           description:
-            - Mobile app that visualizes electron orbitals in augmented reality
+            - Mobile app with over 1000 users that shows electron orbitals in augmented reality
             - Calculates and ray marches wavefunctions in real time with C# and GLSL
-            - Has helped over 400 chemistry students better understand orbital shapes
-        - name: Frame Boy
-          description:
-            - C++ Game Boy emulator with browser and PWA support via webassembly
-            - Includes stereo sound and support for most first-gen cartridges
-            - Preserves older games and helps document obscure hardware behaviors
-        - name: Grifbot
-          description:
-            - Deep learning language model trained to imitate dialogue from a TV show
-            - Chatbot allows virtual fan interaction, scripts provide endless entertainment
         - name: KLE-Render
           description:
             - Webapp for making mockups of custom keyboard layouts and keycap set designs
-            - Used by most keycap set designers, over 200 mockups generated daily
-            - Automated photorealistic renders generated over $1200 in revenue in 2018
-        - See more details about my projects at cqcumbers.com and github.com/cqcumbers
+            - Used by most keycap set designers, more than 200 mockups generated daily
+            - Automated photorealistic renders generated over $2000 in revenue in 2019
+    technical skills:
+        - C, C++, Python, Javascript, Java, Swift, SQL, HTML/CSS, x86/ARM/MIPS, HLSL, Verilog
+        - Docker, Node, Flask, React, Webpack, Redis, Pytorch, CUDA, Vulkan, Ghidra, Unity, Git
     achievements:
         - Won 8th place at HSCTF 2018 and top 30 at Pennapps Fall 2017
         - Won 7th (3rd Science Expert Briefing) at 2018 National Ocean Sciences Bowl (2015-18)
-        - Captained engineering and physics events for Science Olympiad team (2015-18)
+        - Engineering and Physics captain for Princeton High School Science Olympiad (2015-18)

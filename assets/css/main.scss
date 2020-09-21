@@ -250,17 +250,20 @@ p {
 
     .resume {
         margin: auto;
-        padding-top: 5em;
     }
 
     h1 { 
         color: $black;
-        font-size: 2.8em;
+        font-size: 2em;
     }
 
     .contact {
         margin-right: 0.5em;
         font-size: 0.75em;
+    }
+
+    .name, .group, {
+        margin: 0px;
     }
 
     .button {
