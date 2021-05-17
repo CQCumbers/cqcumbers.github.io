@@ -17,7 +17,7 @@ categories:
         - name: University of Michigan College of Engineering
           date: 2018-21
           description:
-            - Computer Science major, coursework in Machine Learning, Database Management, GPU Programming, Operating Systems, Compiler Construction, & Computer Security
+            - Computer Science major, coursework in Machine Learning, Databases, GPU Programming, Operating Systems, Compiler Construction, & Computer Security
     work experience:
         - name: Real Time Water Systems Lab Internship
           date: 2019-20
@@ -26,28 +26,29 @@ categories:
             - Developed LTE modem driver, including HTTP request parser and response builder
             - Created AWS Lambda based server for handling live sensor data using InfluxDB
     selected projects:
+        - name: Navi Search
+          description:
+            - Search engine for over 400 million pages written from scratch in C++
+            - Worked with team of 6 over 4 months to develop crawler, index, etc.
+            - Queries distributed over many AWS servers for useful results in seconds
         - name: Nmulator
           description:
             - Work-in-progress Nintendo 64 emulator that boots many commercial games
-            - JIT recompiles MIPS to x86_64 machine code, including SSE4 for SIMD opcodes
+            - JIT compiles MIPS to x86_64 machine code, including SIMD instructions
             - Emulates RDP using software rasterization in a Vulkan compute shader
         - name: Dungeon Bot
           description:
-            - Deep learning Discord chatbot based on AI Dungeon 2, used by over 1000 servers
+            - Deep learning chatbot based on AI Dungeon, used by over 1000 Discord servers
             - Deployed on ephemeral GPU workers using Docker, coordinated via Redis queues
-        - name: AR Orbitals
-          description:
-            - Mobile app with over 1000 users that shows electron orbitals in augmented reality
-            - Calculates and ray marches wavefunctions in real time with C# and GLSL
         - name: KLE-Render
           description:
             - Webapp for making mockups of custom keyboard layouts and keycap set designs
             - Used by most keycap set designers, more than 200 mockups generated daily
             - Automated photorealistic renders generated over $2000 in revenue in 2019
     technical skills:
-        - C, C++, Python, Javascript, Java, Swift, SQL, HTML/CSS, x86/ARM/MIPS, HLSL, Verilog
+        - C, C++, Python, Javascript, Java, Swift, OCaml, SQL, HTML/CSS, x86/ARM/MIPS, HLSL
         - Docker, Node, Flask, React, Webpack, Redis, Pytorch, CUDA, Vulkan, Ghidra, Unity, Git
     achievements:
         - Won 8th place at HSCTF 2018 and top 30 at Pennapps Fall 2017
-        - Won 7th (3rd Science Expert Briefing) at 2018 National Ocean Sciences Bowl (2015-18)
-        - Engineering and Physics captain for Princeton High School Science Olympiad (2015-18)
+        - Won 7th (3rd Science Expert Briefing) at 2018 National Ocean Sciences Bowl
+        - Engineering and Physics captain for Princeton High School Science Olympiad
