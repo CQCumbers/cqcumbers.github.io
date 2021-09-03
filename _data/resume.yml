@@ -17,7 +17,7 @@ categories:
         - name: University of Michigan College of Engineering
           date: 2018-21
           description:
-            - Computer Science major, coursework in Machine Learning, Databases, GPU Programming, Operating Systems, Compiler Construction, & Computer Security
+            - Graduated with B.S. in Computer Science; courses in Machine Learning, Databases, GPU Programming, Operating Systems, Compiler Construction, & Computer Security
     work experience:
         - name: Real Time Water Systems Lab Internship
           date: 2019-20
@@ -26,6 +26,11 @@ categories:
             - Developed LTE modem driver, including HTTP request parser and response builder
             - Created AWS Lambda based server for handling live sensor data using InfluxDB
     selected projects:
+        - name: Minaret
+          description:
+            - Wrote LLVM backend and toolchain ports for a new instruction set
+            - Implemented multicycle CPU, DDR3 controller, display, etc. on FPGA
+            - Ported Doom, Coremark, and other software to custom SoC design
         - name: Navi Search
           description:
             - Search engine for over 400 million pages written from scratch in C++
@@ -36,10 +41,6 @@ categories:
             - Work-in-progress Nintendo 64 emulator that boots many commercial games
             - JIT compiles MIPS to x86_64 machine code, including SIMD instructions
             - Emulates RDP using software rasterization in a Vulkan compute shader
-        - name: Dungeon Bot
-          description:
-            - Deep learning chatbot based on AI Dungeon, used by over 1000 Discord servers
-            - Deployed on ephemeral GPU workers using Docker, coordinated via Redis queues
         - name: KLE-Render
           description:
             - Webapp for making mockups of custom keyboard layouts and keycap set designs
@@ -47,8 +48,8 @@ categories:
             - Automated photorealistic renders generated over $2000 in revenue in 2019
     technical skills:
         - C, C++, Python, Javascript, Java, Swift, OCaml, SQL, HTML/CSS, x86/ARM/MIPS, HLSL
-        - Docker, Node, Flask, React, Webpack, Redis, Pytorch, CUDA, Vulkan, Ghidra, Unity, Git
+        - Docker, Node, Flask, React, Redis, Pytorch, CUDA, Vulkan, Ghidra, Unity, Git
     achievements:
-        - Won 8th place at HSCTF 2018 and top 30 at Pennapps Fall 2017
+        - 8th place HSCTF 2018, top 30 Pennapps Fall 2017, 131st place Ludum Dare 43
         - Won 7th (3rd Science Expert Briefing) at 2018 National Ocean Sciences Bowl
         - Engineering and Physics captain for Princeton High School Science Olympiad
