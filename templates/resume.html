@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ config.title }} | Resume</title>
+    <meta name="description" content="Alexander Zhang's Resume">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500|Eczar:700" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="resume">
+      <h1>{{ page.extra.name }}</h1>
+      {% for method in page.extra.contact %}
+      {% if method.public or config.mode  == "serve" %}
+      <a class="button contact" href="{{ method.link | safe }}">{{ method.name }}</a>
+      <span class="print contact">{{ method.print }}</span>
+      {% endif %}
+      {% endfor %}
+      {{ page.content | safe }}
+      {# {% for name, category in resume.categories %}
+      <h2 class="category">{{ name }}</h2>
+        {% for item in category %}
+        {% if item.name %}
+        <div class="group">
+          <h3 class="item-name">{{ item.name }}</h3>
+	  {% if item.date %}
+          <h3 class="date">{{ item.date }}</h3>
+	  {% endif %}
+        </div>
+        <ul class="description">
+          {% for bullet in item.description %}
+          <li>{{ bullet }}</li>
+          {% endfor %}
+        </ul>
+        {% else %}
+        <p class="item">{{ item.description }}</p>
+        {% endif %}
+        {% endfor %}
+	{% endfor %} #}
+    </div>
+  </body>
+</html>

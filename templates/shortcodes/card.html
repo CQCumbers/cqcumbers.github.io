@@ -1,0 +1,20 @@
+<div class="project" data-aos="fade-up">
+  <div class="project-img-col">
+  {% if video %}
+    {% if nth <= 2 %}
+    <video class="project-img" src="/assets/images/{{ video }}" autoplay muted loop playsinline></video>
+    {% else %}
+    <video class="project-img lazyload" data-src="/assets/images/{{ video }}" autoplay muted loop playsinline></video>
+    {% endif %}
+  {% else %}
+    {% if nth <= 2 %}
+    <img class="project-img" src="/assets/images/{{ image }}" alt="{{ image }}">
+    {% else %}
+    <img class="project-img lazyload" data-src="/assets/images/{{ image }}" alt="{{ image }}">
+    {% endif %}
+  {% endif %}
+  </div>
+  <div class="project-disc">
+    {{ body | markdown | safe }}
+  </div>
+</div>

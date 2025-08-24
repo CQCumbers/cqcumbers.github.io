@@ -1,0 +1,13 @@
+name: Build and deploy
+on: push
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Build and deploy
+        uses: shalzz/zola-deploy-action@v0.21.0
+        env:
+          TOKEN: ${{ secrets.GITHUB_TOKEN }}

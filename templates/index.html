@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>{{ config.title }} | Portfolio</title>
+    <meta name="description" content="{{ config.description }}">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,600|Eczar:700" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.css" rel="stylesheet">
+  </head>
+  <body>
+    <div class="sidebar">
+      <div class="branding-col-1">
+        <img class="logo" src="/assets/images/logo.svg" alt="">
+        <h1 class="name">Projects</h1>
+      </div>
+      <div class="branding-col-2">
+        <p class="bio">{{ section.extra.bio | safe }}</p>
+        {% for link in section.extra.links %}
+        <a class="button" href="{{ link.url | safe }}">{{ link.title }}</a>
+        {% endfor %}
+      </div>
+    </div>
+    <div class="project-pane">
+      {{ section.content | safe }}
+    </div>
+    <p class="footer">Website by Alexander Zhang</p>
+
+    <script src="https://unpkg.com/lazysizes@5.1.2/lazysizes.min.js"></script>
+    <script src="https://unpkg.com/aos@3.0.0-beta.6/dist/aos.js"></script>
+    <script>AOS.init({once: true, duration: 900, offset: 120});</script>
+  </body>
+</html>
