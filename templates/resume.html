@@ -13,7 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:400,500|Eczar:700" rel="stylesheet">
-    <link href="main.css" rel="stylesheet">
+    <link href="/main.css" rel="stylesheet">
   </head>
   <body>
     <div class="resume">
@@ -25,26 +25,6 @@
       {% endif %}
       {% endfor %}
       {{ page.content | safe }}
-      {# {% for name, category in resume.categories %}
-      <h2 class="category">{{ name }}</h2>
-        {% for item in category %}
-        {% if item.name %}
-        <div class="group">
-          <h3 class="item-name">{{ item.name }}</h3>
-	  {% if item.date %}
-          <h3 class="date">{{ item.date }}</h3>
-	  {% endif %}
-        </div>
-        <ul class="description">
-          {% for bullet in item.description %}
-          <li>{{ bullet }}</li>
-          {% endfor %}
-        </ul>
-        {% else %}
-        <p class="item">{{ item.description }}</p>
-        {% endif %}
-        {% endfor %}
-	{% endfor %} #}
     </div>
   </body>
 </html>
