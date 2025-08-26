@@ -10,6 +10,37 @@ links = [
 ]
 +++
 
+
+{% card(image="flickpad.jpg") %}
+# Flickpad
+
+Flickpad is wireless keypad with 20 5-direction switches. Pushing each direction triggers a different key, so it can imitate the flick keyboard often used for typing Japanese on phones. It was inspired by Furikku, Google GBoard's April Fool's Day joke from 2016. I designed the PCB in KiCad, modeled the case and keycaps in Solidworks, and wrote the firmware using ZMK. This was my first from-scratch PCB design, and I learned a lot about laying out microcontroller circuits, positioning parts so that they can be assembled, and incorporating debugging features in advance. Integrating ZMK and adding Japanese typographic symbols also taught me a lot about Zephyr RTOS, and the interactions between keyboard firmware, the USB HID spec, Windows keyboard handling, and IMEs.
+
+{{ button(title="Github Repo", url="https://github.com/CQCumbers/zmk-keyboard-flickpad") }}
+{% end %}
+
+
+{% card(image="github_achievements.png") %}
+# Github Achievements
+
+This one-weekend project was inspired by flet's list of imaginary github achievements, as well as Simon Willison's articles exploring Clickhouse's free Github activities dataset. After running a few queries for users that fulfilled flet's various achievement criteria, I found a surprising number of accounts with interesting and unusual usage, and decided to share the results in the form of an online leaderboard. Github's activities data is event-based and rather large, so getting user statistics was a satisfying puzzle in efficient SQL query construction. The leaderboard itself was also a good way to practice building a reasonably polished website with handwritten HTML and CSS.
+
+{{ button(title="Website", url="https://cqcumbers.com/github_achievements") }}
+{{ button(title="Github Repo", url="https://github.com/CQCumbers/github_achievements") }}
+{% end %}
+
+
+{% card(video="diffusionapp.mp4") %}
+# Diffusion.app
+
+Diffusion.app is a native mac implementation of Stable Diffusion 1.5, including a full text-to-image inference pipeline and minimal Cocoa UI. Soon after the release of Stable Diffusion, I realized there was a need for a simple interface for running the model locally, with better performance and fewer installation issues than the reference python implementation, or a webapp wrapper. My approach was to rewrite the pipeline, including tokenizer, scheduler, and noise generation, in Objective C, and export the network itself to CoreML. Efficient memory reuse and some python library patches allowed it to run even on Intel Macs. Though largely superseded by other implementations, it was useful for exploring models locally, and a helpful introduction to diffusion model inference.
+
+
+{{ button(title="Downloads", url="https://nightly.link/CQCumbers/diffusionapp/workflows/build/master") }}
+{{ button(title="Github Repo", url="https://github.com/CQCumbers/diffusionapp") }}
+{% end %}
+
+
 {% card(image="minaret.jpg") %}
 # Minaret
 
@@ -49,7 +80,7 @@ Dungeon Bot is a Discord bot interface for the popular game AI Dungeon 2, an ope
 {% card(image="nmulator.png") %}
 # Nmulator
 
-nmulator is a work-in-progress Nintendo 64 emulator for PCs, which currently boots a decent number of commercial games. Internally, it consists of a dynamic recompiler that translates N64 CPU and RSP instructions into x86 for the host CPU, and a vulkan compute shader that processes RDP commands on the host GPU. SSE4 is used to emulate the RSP's vector coprocessor instructions. Building nmulator was a valuable experience in reverse engineering real-world software, implementing and optimizing JITs, using SIMD instructions to improve performance, and understanding both older fixed-function rasterization pipelines and modern GPU compute. Along the way, I also learned the value of building debugging tools like gdb servers, and of writing readable documentation for yourself and others.
+nmulator is an experimental Nintendo 64 emulator for Windows and Mac, which currently boots a decent number of commercial games. Internally, it consists of a dynamic recompiler that translates N64 CPU and RSP instructions into x86 for the host CPU, and a vulkan compute shader that processes RDP commands on the host GPU. SSE4 is used to emulate the RSP's vector coprocessor instructions. Building nmulator was a valuable experience in reverse engineering real-world software, implementing and optimizing JITs, using SIMD instructions to improve performance, and understanding both older fixed-function rasterization pipelines and modern GPU compute. Along the way, I also learned the value of building debugging tools like gdb servers, and of writing readable documentation for yourself and others.
 
 {{ button(title="Downloads", url="https://nightly.link/CQCumbers/nmulator/workflows/build/master") }}
 {{ button(title="Github Repo", url="https://github.com/CQCumbers/nmulator") }}
